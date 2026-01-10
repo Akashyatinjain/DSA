@@ -1,0 +1,13 @@
+# Java SDK / JDK
+Oracle_JDK-24/
+*.jdk/
+
+# OS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Build files
+*.class
