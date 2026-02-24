@@ -1,29 +1,33 @@
 
 class Solution {
 
-    // Function to rotate the matrix 90 degrees clockwise using extra space
     public int[][] rotateClockwise(int[][] matrix) {
-        // Get the size of the square matrix
         int n = matrix.length;
 
-        // Create a new matrix of same size to store rotated result
-        int[][] rotated = new int[n][n];
-
-        // Traverse each element of original matrix
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                // Place the element at its new rotated position
-                rotated[j][n - i - 1] = matrix[i][j];
+            for (int j = i + 1; j < n; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
             }
         }
-
-        // Return the rotated matrix
-        return rotated;
+        for (int i = 0; i < n; i++) {
+            int left = 0;
+            int right = n - 1;
+            while (left < right) {
+                int temp = matrix[i][left];
+                matrix[i][left] = matrix[i][right];
+                matrix[i][left] = temp;
+                left++;
+                right--;
+            }
+        }
+        return matrix;
     }
 }
-
 // Driver class
-public class roatatematrix {
+
+public class transporeAMatrix {
 
     public static void main(String[] args) {
         int[][] mat = {
