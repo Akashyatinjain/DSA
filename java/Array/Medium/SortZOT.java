@@ -1,4 +1,6 @@
 
+import java.util.List;
+
 class Solution {
 
     public int[] sort(int[] arr, int n) {
@@ -42,6 +44,22 @@ class Solution {
             arr[i] = 2;
         }
         return arr;
+    }
+
+    List spiralOrder(int[][] matrix) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    List spiralOrder(int[][] matrix) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    List spiralOrder(int[][] matrix) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    List spiralOrder(int[][] matrix) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
 
