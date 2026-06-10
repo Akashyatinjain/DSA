@@ -83,21 +83,24 @@ class Repeatingnumbers {
         //-------------------------------------------------------------------------------
         // or 
         //-------------------------------------------------------------------------------
-        int sumOfN = (n * (n + 1)) / 2;
-        int sumOfSquare = (n * (n + 1) * (2 * n + 1)) / 6;
-        int arrsum = 0;
-        for (int i = 0; i < n; i++) {
-            arrsum = arrsum + nums[i];
-        }
-        int arrsumSquare = 0;
-        for (int i = 0; i < n; i++) {
-            arrsumSquare = arrsumSquare + nums[i] * nums[i];
-        }
-        int val1 = sumOfN - arrsum;
-        int val2 = sumOfSquare - arrsumSquare;
-        val2 = val2 / val1;
-        int x = (val1 + val2) / 2;
-        int y = x - val1;
-        System.err.println(x + "dzgv " + y);
+        // int sumOfN = (n * (n + 1)) / 2;
+        // int sumOfSquare = (n * (n + 1) * (2 * n + 1)) / 6;
+        // int arrsum = 0;
+        // for (int i = 0; i < n; i++) {
+        //     arrsum = arrsum + nums[i];
+        // }
+        // int arrsumSquare = 0;
+        // for (int i = 0; i < n; i++) {
+        //     arrsumSquare = arrsumSquare + nums[i] * nums[i];
+        // }
+        // int val1 = sumOfN - arrsum;
+        // int val2 = sumOfSquare - arrsumSquare;
+        // val2 = val2 / val1;
+        // int x = (val1 + val2) / 2;
+        // int y = x - val1;
+        // System.err.println(x + "dzgv " + y);
+        //-------------------------------------------------------------------------------
+        // or 
+        //-------------------------------------------------------------------------------
     }
 }
