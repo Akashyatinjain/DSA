@@ -24,9 +24,19 @@ public class Book {
         }
         int low = Collections.max(arr);
         int high = arr.stream().mapToInt(Integer::intValue).sum();
-        for (int i = low; i <= high; i++) {
-            if (countStudents(arr, i) == m) {
-                return i;
+        // for (int i = low; i <= high; i++) {
+        //     if (countStudents(arr, i) == m) {
+        //         return i;
+        //     }
+        // }
+        // return low;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            int students = countStudents(arr, mid);
+            if (students > m) {
+                low = mid + 1;  //Trim down the left part of the arry
+            } else {
+                high = mid - 1; //Trim down the right part of the array
             }
         }
         return low;
